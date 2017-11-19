@@ -37,6 +37,7 @@ p {
 
 .card p {
   margin-bottom: 2vw;
+  padding-right: 20%;
 }
 
 
@@ -84,6 +85,10 @@ p {
 .category-container ul li {
   margin-right: 2vw;
   cursor: pointer;
+}
+
+.category-container ul li:hover {
+  color: coral;
 }
 
 .introduction {
