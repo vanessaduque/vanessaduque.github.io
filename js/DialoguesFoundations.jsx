@@ -38,17 +38,10 @@ class DialoguesFoundations extends Component {
           ))}
         </ul>
         <section>
-          {collection.categories.map(category => {
-            if(this.state.activeCategory === "About") {
-              return(
-                <Card
-                  title="About"
-                  img={" "}
-                  description={this.state.aboutText}
-                />
-              )
-            }
-            else if (this.state.activeCategory === category.name) {
+          { this.state.activeCategory === "About"?  <Card title="About" img={" "} description={this.state.aboutText} /> :
+
+            collection.categories.map(category => {
+           if (this.state.activeCategory === category.name) {
               return category.images.map(img => (
                 <Card
                   title={" "}
