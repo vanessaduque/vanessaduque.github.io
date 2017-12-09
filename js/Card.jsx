@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Card extends Component {
   constructor(title, img, description, references) {
@@ -17,7 +18,9 @@ class Card extends Component {
   render() {
     return (
       <section className="card">
-        <img src={"../public/img/" + this.props.img} />
+        {this.props.img ? (
+          <img src={`../public/img/${this.props.img}`} alt={this.props.title} />
+        ) : null}
         <h4>{this.props.title}</h4>
         <p>{this.props.description}</p>
         {this.props.references
@@ -29,3 +32,10 @@ class Card extends Component {
 }
 
 export default Card;
+
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  references: PropTypes.string.isRequired
+};

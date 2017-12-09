@@ -10,7 +10,8 @@ class DialoguesFoundations extends Component {
     super();
     this.state = {
       activeCategory: "About",
-      aboutText: "Explores multiple ways to relate and engage with everyday denim objects, presenting a series of artifacts with a sense of replications and associated with specific information that is coded by cultural and social references. The collection approaches gestures of the body and how they function as a metaphor for creating alternative dialogues and a language of signs in everyday context."
+      aboutText:
+        "Explores multiple ways to relate and engage with everyday denim objects, presenting a series of artifacts with a sense of replications and associated with specific information that is coded by cultural and social references. The collection approaches gestures of the body and how they function as a metaphor for creating alternative dialogues and a language of signs in everyday context."
     };
     this.setCategory = this.setCategory.bind(this);
     this.props = {};
@@ -32,25 +33,27 @@ class DialoguesFoundations extends Component {
         </p>
         <ul>
           {collection.categories.map((category, index) => (
-            <li key={index} onClick={() => this.setCategory(category.name)}>
+            <li key={index} onClick={() => this.setCategory(category.name)} >
               <h4>{category.name}</h4>
             </li>
           ))}
         </ul>
         <section>
-          { this.state.activeCategory === "About"?  <Card title="About" img={" "} description={this.state.aboutText} /> :
-
+          {this.state.activeCategory === "About" ? (
+            <Card title="About" description={this.state.aboutText} />
+          ) : (
             collection.categories.map(category => {
-           if (this.state.activeCategory === category.name) {
-              return category.images.map(img => (
-                <Card
-                  title={" "}
-                  img={img.url}
-                  description={img.description}
-                />
-              ));
-            }
-          })}
+              if (this.state.activeCategory === category.name) {
+                return category.images.map(img => (
+                  <Card
+                    title=" "
+                    img={img.url}
+                    description={img.description}
+                  />
+                ));
+              }
+            })
+          )}
         </section>
       </section>
     );

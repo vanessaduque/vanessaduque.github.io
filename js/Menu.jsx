@@ -2,29 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import preload from "../data.json";
 
-const collections = preload.collections;
-const menuColOne = [];
-const menuColTwo = [];
-
-for (let i = 0; i < collections.length; i++) {
-  if (i < 3) {
-    menuColOne.push(
-      <li>
-        <Link to={collections[i].url}>
-          <h2>{collections[i].title}</h2>
-        </Link>
-      </li>
-    );
-  } else {
-    menuColTwo.push(
-      <li>
-        <Link to={collections[i].url}>
-          <h2>{collections[i].title}</h2>
-        </Link>
-      </li>
-    );
-  }
-}
+const { collections } = preload;
+// const menuColOne = [];
+// const menuColTwo = [];
 
 const Menu = () => (
   <section className="menu">
@@ -38,8 +18,15 @@ const Menu = () => (
     </article>
 
     <article className="navbar">
-      <ul>{menuColOne}</ul>
-      <ul>{menuColTwo}</ul>
+      <ul>
+        {collections.map(collection => (
+          <li>
+            <Link to={collection.url}>
+              <h2>{collection.title}</h2>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </article>
   </section>
 );

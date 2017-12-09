@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Martel+Sans:400,700');
+@import url("https://fonts.googleapis.com/css?family=Martel+Sans:400,700");
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Martel Sans', Helvetica, Arial, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Martel Sans", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -25,7 +30,7 @@ p {
 .card h5 {
   font-size: 0.8vw;
   font-weight: lighter;
-  color: #192AA3;
+  color: #192aa3;
   margin: 0;
   max-width: 70%;
 }
@@ -40,25 +45,26 @@ p {
   padding-right: 20%;
 }
 
-
 .category-container {
   margin-top: 1vw;
 }
 
 .category-container a {
- float: right;
- text-decoration: none;
- color: black;
- margin-right: 5vw;
+  float: right;
+  text-decoration: none;
+  color: black;
+  margin-right: 5vw;
 }
 
 .category-container a p {
   font-weight: bold;
   font-size: 1.1vw;
+  transition: 0.8s;
 }
 
 .category-container a p:hover {
   color: coral;
+  transition: 0.4s;
 }
 
 .category-container h3 {
@@ -71,9 +77,9 @@ p {
 }
 
 .category-container h4 {
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1vw;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1vw;
 }
 
 .category-container ul {
@@ -92,42 +98,48 @@ p {
 }
 
 .introduction {
-  color: #192AA3;
+  color: #192aa3;
   margin-left: 29vw;
   -webkit-width: 24vw;
-     -moz-width: 24vw;
-      column-width: 24vw;
-      column-gap: 50px;
+  -moz-width: 24vw;
+  column-width: 24vw;
+  column-gap: 50px;
 }
 .introduction p {
-  padding-right: 8vw;;
+  padding-right: 8vw;
 }
 
 .menu {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.menu article{
+.menu article {
   float: left;
-  margin-right: 3%;
+  margin-right: 1.55vw;
 }
 
 .menu article h2 {
   font-size: 1.3vw;
   line-height: 1.5vw;
+  transition: 0.8s;
 }
 
 .menu article h2:hover {
+  transition: 0.4s;
   color: coral;
 }
 
 .menu article h2::after {
-  content: ',';
+  content: ",";
 }
 
 .navbar {
+  flex: 1;
   display: flex;
+  flex-wrap: wrap;
+  height: 27vh;
   width: 100%;
 }
 
@@ -137,16 +149,26 @@ p {
 }
 
 .navbar ul {
-  border-top: solid 3px black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
-  padding: 0 8.5vw 0 0;
+  margin-top: 3.5vh;
+  padding: 0;
 }
 
-.navbar ul:first-child {
-  margin-right: 12vw;
+.navbar li {
+  margin: -1vh 12vw -1.2vh 0;
+  padding-right: 8.5vw;
+}
+
+.navbar li:first-child, .navbar li:nth-child(4) {
+  border-top: solid 3px black;
+  padding-top: 0.1vh;
 }
 
 .title {
+  flex: 1;
   max-width: 28%;
   font-size: 1.8vw;
   line-height: 4vw;
