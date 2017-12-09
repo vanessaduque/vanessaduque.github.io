@@ -1,10 +1,10 @@
+/* eslint-disable */
+
 import React from "react";
 import { Link } from "react-router-dom";
 import preload from "../data.json";
 
 const { collections } = preload;
-// const menuColOne = [];
-// const menuColTwo = [];
 
 const Menu = () => (
   <section className="menu">
