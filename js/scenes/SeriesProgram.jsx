@@ -2,13 +2,13 @@
 
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Card from "./Card";
-import preload from "../data.json";
+import Card from "../components/Card";
+import preload from "../../data.json";
 
-const collection = preload.collections[1];
+const collection = preload.collections[2];
 const imgTest = `https://images.reverb.com/image/upload/s--shbpUiDn--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_620,q_90,w_620/v1360301822/mpk0ux9htglk6ldgyaxk.jpg`;
 
-class SelfReferential extends Component {
+class SeriesProgramLook extends Component {
   constructor() {
     super();
     this.state = {
@@ -38,7 +38,6 @@ class SelfReferential extends Component {
               title={category.name}
               img={category.img}
               description={category.description}
-              references={category.references}
             />
           ))}
         </section>
@@ -47,4 +46,4 @@ class SelfReferential extends Component {
   }
 }
 
-export default SelfReferential;
+export default SeriesProgramLook;

@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Card from "./Card";
-import preload from "../data.json";
+import Card from "../components/Card";
+import preload from "../../data.json";
 
 const collection = preload.collections[3];
 
@@ -11,8 +11,7 @@ class DialoguesFoundations extends Component {
     super();
     this.state = {
       activeCategory: "About",
-      aboutText:
-        "Explores multiple ways to relate and engage with everyday denim objects, presenting a series of artifacts with a sense of replications and associated with specific information that is coded by cultural and social references. The collection approaches gestures of the body and how they function as a metaphor for creating alternative dialogues and a language of signs in everyday context."
+      aboutText: "Explores multiple ways to relate and engage with everyday denim objects, presenting a series of artifacts with a sense of replications and associated with specific information that is coded by cultural and social references. The collection approaches gestures of the body and how they function as a metaphor for creating alternative dialogues and a language of signs in everyday context."
     };
     this.setCategory = this.setCategory.bind(this);
     this.props = {};
