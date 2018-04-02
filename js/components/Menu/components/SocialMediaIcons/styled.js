@@ -13,7 +13,7 @@ const IconsWrapper = styled.div`
 		transition: 0.2s;
 
 		&:hover {
-			fill: coral;
+			fill: coral; 
 			stroke: coral;
       cursor: pointer;
 			transition: 0.1s;
