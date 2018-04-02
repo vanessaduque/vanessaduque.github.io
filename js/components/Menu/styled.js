@@ -4,13 +4,16 @@ export const MenuWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 11rem;
+    height: 14rem;
+    flex: 1;
 `
 
 export const Navbar = styled.div`
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     margin-right: 1.55vw;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -25,6 +28,12 @@ export const Navbar = styled.div`
       padding: 0;
       max-width: 100%;
     }
+`
+
+export const NavbarWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 `
 
 export const Title =  styled.div`
@@ -45,9 +54,9 @@ export const Title =  styled.div`
 export const Subtitle = styled.li`
     margin: -1vh 12vw -0.2vh 0;
     padding-right: 8.5vw;
-    padding-top: ${ props => props.test ? '0.1vh' : '0' };
-    margin-top: ${ props => props.test ? '0rem' : '-0.3rem'};
-    border-top: ${ props => props.test ? 'solid 0.2rem black' : 'none'};
+    padding-top: ${ props => props.firstOfColumn ? '0.1vh' : '0' };
+    margin-top: ${ props => props.firstOfColumn ? '0rem' : '-0.3rem'};
+    border-top: ${ props => props.firstOfColumn ? 'solid 0.2rem black' : 'none'};
 
     h2 {
       font-size: 1.15rem;
