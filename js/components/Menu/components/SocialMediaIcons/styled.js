@@ -10,11 +10,13 @@ const IconsWrapper = styled.div`
 
 	svg {
 		margin: 0 0.5rem;
+		transition: 0.2s;
 
 		&:hover {
 			fill: coral;
 			stroke: coral;
       cursor: pointer;
+			transition: 0.1s;
 		}
 	}
 `;
