@@ -2,16 +2,16 @@ import React from "react";
 import PropTypes from "prop-types";
 import CardWrapper from "./styled"
 
-const Card = props => (
+const Card = ({img, title, description, references}) => (
   <CardWrapper>
-    {props.img ? (
-      <img src={`../../public/img/${props.img}`} alt={props.title} />
+    {img ? (
+      <img src={`../../public/img/${img}`} alt={title} />
     ) : null}
-    <h4>{props.title}</h4>
-    <p>{props.description}</p>
-    {props.references
-      ? props.references.map(reference => <h5>{reference}</h5>)
-      : ""}
+    <h4>{title}</h4>
+    <p>{description}</p>
+    { references
+      ? references.map(reference => <h5>{reference}</h5>)
+      : null }
   </CardWrapper>
 );
 
