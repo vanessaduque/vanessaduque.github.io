@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const glyphs = {
@@ -8,7 +7,7 @@ const glyphs = {
 				d="M9 .85A8.15 8.15 0 0 0 .85 9v14A8.15 8.15 0 0 0 9 31.15h14A8.15 8.15 0 0 0 31.15 23V9A8.15 8.15 0 0 0 23 .85H9z"
 				strokeWidth="1.7"
 			/>
-			<circle  strokeWidth="1.9" cx="16" cy="16" r="7.5" />
+			<circle strokeWidth="1.9" cx="16" cy="16" r="7.5" />
 			<circle fill="none" cx="24.7" cy="7.3" r="1.5" />
 		</g>
 	),
