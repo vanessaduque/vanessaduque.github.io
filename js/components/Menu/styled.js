@@ -51,26 +51,3 @@ export const Title =  styled.div`
       margin: 1% 0;
     }
 `
-
-export const Subtitle = styled.li`
-    margin: -1vh 12vw -0.2vh 0;
-    padding-right: 8.5vw;
-    padding-top: ${ props => props.firstOfColumn ? '0.1vh' : '0' };
-    margin-top: ${ props => props.firstOfColumn ? '0rem' : '-0.3rem'};
-    border-top: ${ props => props.firstOfColumn ? 'solid 0.2rem black' : 'none'};
-
-    h2 {
-      font-size: 1.15rem;
-      line-height: 1rem;
-      transition: 0.8s;
-
-      &:hover {
-        transition: 0.4s;
-        color: coral;
-      }
-
-      &::after {
-        content: ",";
-      }
-    }
-`
