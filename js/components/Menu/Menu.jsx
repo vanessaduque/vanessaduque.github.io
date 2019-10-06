@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import preload from "../../../data.json";
+import Columns from './components/Column'
 import SocialMediaIcons from "./components/SocialMediaIcons"
-import { MenuWrapper, Navbar, NavbarWrapper, Title, Subtitle } from "./styled";
+import { MenuWrapper, Navbar, NavbarWrapper, Title } from "./styled";
 
 const { collections } = preload;
-const elementsPerColumn = 3;
 
 const Menu = () => (
 	<MenuWrapper>
@@ -20,28 +20,7 @@ const Menu = () => (
 		<NavbarWrapper>
 			<SocialMediaIcons />
 			<Navbar>
-				<ul>
-					{collections.map((collection, i) => {
-						const isNewColumn = i % elementsPerColumn === 0;
-
-						if (isNewColumn) {
-							return (
-								<Subtitle firstOfColumn key={`123_${collection.title}`}>
-									<NavLink to={collection.url}>
-										<h2>{collection.title}</h2>
-									</NavLink>
-								</Subtitle>
-							);
-						}
-						return (
-							<Subtitle key={`123_${collection.title}`}>
-								<NavLink to={collection.url}>
-									<h2>{collection.title}</h2>
-								</NavLink>
-							</Subtitle>
-						);
-					})}
-				</ul>
+				<Columns items={ collections }/>
 			</Navbar>
 		</NavbarWrapper>
 	</MenuWrapper>
