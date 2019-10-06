@@ -1,10 +1,10 @@
 /* eslint-disable */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
 import Card from "../../components/Card";
 import preload from "../../../data.json";
 import CardsWrapper from "../SharedComponents/CardsWrapper";
-import DialoguesFoundationsWrapper from './styled'
+import { DialoguesFoundationsWrapper, Caption } from './styled'
 
 const collection = preload.collections[3];
 
@@ -34,20 +34,25 @@ class DialoguesFoundations extends Component {
 					{collection.tag} - {collection.date}
 				</p>
 				<ul>
-					{collection.categories.map((category, index) => (
-						<li key={index} onClick={() => this.setCategory(category.name)}>
-							<h4>{category.name}</h4>
+					{collection.categories.map(({name}) => (
+						<li key={name} onClick={() => this.setCategory(name)}>
+							<h4>{name}</h4>
 						</li>
 					))}
 				</ul>
 				<section>
-					{this.state.activeCategory === "About" ? (
+					{ this.state.activeCategory === "About" ? (
 						<Card title="About" description={this.state.aboutText} />
 					) : (
 						<CardsWrapper>
-							{collection.categories.map(category => {
+							{ collection.categories.map(category => {
 								if (this.state.activeCategory === category.name) {
-									return category.images.map(img => <Card title=" " img={img.url} description={img.description} />);
+									return (
+										<Fragment>
+											{category.images.map(img => <Card title=" " img={img.url} description={img.description} />)}
+											<Caption>{category.caption}</Caption>
+										</Fragment>
+									)
 								}
 							})}
 						</CardsWrapper>
