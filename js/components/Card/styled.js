@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 const CardWrapper = styled.div`
   display: inline;
-  float: left;
   padding: 1px;
 
 img {
-  height: 25vw;
+  height: 27vw;
 }
 
 h5 {
@@ -23,7 +22,7 @@ h5 {
 }
 
 p {
-  margin-bottom: 2vw;
+  margin: 0;
   padding-right: 20%;
 }
 `

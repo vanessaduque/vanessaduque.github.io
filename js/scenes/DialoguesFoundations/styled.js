@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const DialoguesFoundationsWrapper = styled.div`
+export const DialoguesFoundationsWrapper = styled.div`
   margin-top: 1vw;
 
  a {
@@ -52,4 +52,6 @@ const DialoguesFoundationsWrapper = styled.div`
 }
 `
 
-export default DialoguesFoundationsWrapper
+export const Caption = styled.p`
+  margin-top: 4rem;
+`

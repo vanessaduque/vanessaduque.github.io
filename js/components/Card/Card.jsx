@@ -8,7 +8,7 @@ const Card = ({img, title, description, references}) => (
       <img src={`../../public/img/${img}`} alt={title} />
     ) : null}
     <h4>{title}</h4>
-    <p>{description}</p>
+    { description.split("\n").map(line => <p>{line}</p>)}
     { references
       ? references.map(reference => <h5>{reference}</h5>)
       : null }

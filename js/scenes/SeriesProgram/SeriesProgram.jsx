@@ -21,10 +21,10 @@ const SeriesProgram = () => (
 		<CardsWrapper>
 			{collection.categories.map(category => (
 				<Card
-          title={category.name}
-          img={category.img}
-          description={category.description}
-        />
+					title={category.name}
+					img={category.img}
+					description={category.description}
+				/>
 			))}
 		</CardsWrapper>
 	</SeriesProgramWrapper>
