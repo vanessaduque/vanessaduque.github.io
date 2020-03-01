@@ -49,7 +49,7 @@ class DialoguesFoundations extends Component {
 								if (this.state.activeCategory === category.name) {
 									return (
 										<Fragment>
-											{category.images.map(img => <Card title=" " img={img.url} description={img.description} />)}
+											{ category.images.map(img => <Card title=" " img={img.url} description={img.description} />)}
 											<Caption>{category.caption}</Caption>
 										</Fragment>
 									)
