@@ -6,6 +6,7 @@ import SocialMediaIcons from "./components/SocialMediaIcons"
 import { MenuWrapper, Navbar, NavbarWrapper, Title } from "./styled";
 
 const { collections } = preload;
+const menuCollections = collections.slice(0, 5)
 
 const Menu = () => (
 	<MenuWrapper>
@@ -20,7 +21,7 @@ const Menu = () => (
 		<NavbarWrapper>
 			<SocialMediaIcons />
 			<Navbar>
-				<Columns items={ collections }/>
+				<Columns items={ menuCollections }/>
 			</Navbar>
 		</NavbarWrapper>
 	</MenuWrapper>

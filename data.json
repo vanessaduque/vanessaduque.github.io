@@ -50,11 +50,10 @@
       "title": "Series Program",
       "url": "series-program",
       "img": "String",
-      "description": "String",
+      "description": "Lookbook recreates gestures of the body in relationship with wearing, to reflecting on how they function as a metaphor for creating alternative dialogues, and a language of signs in everyday context. \n Body gestures are featured in a recording live presentation with people wearing 9 individual looks. \n The outcome is a lookbook that highlights the collection as a serie of garments/outfits that open an interactive form play of wearing and layering meaning.",
       "date": "November, 2017",
       "tag": "Lookbook",
       "categories": [
-
         {
           "name": "blue dust",
           "description": "Object 1: Hands on head \n Denim dust on silk jacket \n Denim Dust regular wide leg jeans",
@@ -205,6 +204,69 @@
           "name": "Documenta",
           "description": "String",
           "img": "String"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "title": "The Collection",
+      "url": "/",
+      "img": "String",
+      "description": "“The collection” explores in a fashion collection format the never-ending possibilities of denim objects and its modular meaning through a series of garments that combines different materials techniques and narratives around denim perceptions. ",
+      "categories": [
+        {
+          "name": "a. Silk: \n lightweight material becomes layers of overlay.",
+          "description": "look 1 - \n side view overall , silk composition",
+          "img": "The-collection-1.jpg",
+          "references": []
+        },
+        {
+          "name": "a. Silk:",
+          "description": "look 2 - \n Oversize and dropped jumpsuit, silk composition.",
+          "img": "The-collection-2.jpg",
+          "references": []
+        },
+        {
+          "name": "a. Silk:",
+          "description": "look 3 - \n under layer: skinny high rise jean, silk/elastane \n baggy low rise, silk composition",
+          "img": "The-collection-3.jpg",
+          "references": []
+        },
+        {
+          "name": "b. Viscose lining: retail repetition / folding exercise, and all things repeatedly folded and piled.",
+          "description": "look 4 - \nwhite t-shirt with dust printed stripe, silk composition \n regular jacket, rayon composition \n Folded jeans, rayon composition",
+          "img": "The-collection-4.jpg",
+          "references": []
+        },
+        {
+          "name": "c. Wool: Expands on the notion of weight within denim associations.",
+          "description": "look 5 - \n cropped longsleeve white t-shirt, cotton vinyl coated \n regular jacket / regular wide leg jeans, wool composition",
+          "img": "The-collection-5.jpg",
+          "references": []
+        },
+        {
+          "name": "c. Wool:",
+          "description": "look 6 - \n sleeveless dress, cotton vinyl coated \n dropped and elongated “the regular jacket” coat \n wool composition",
+          "img": "The-collection-6.jpg",
+          "references": []
+        },
+        {
+          "name": "c. Wool:",
+          "description": "look 7 - \n cropped t-shirt, cotton - vinyl coated \n underlayer skinny high rise jean, silk/elastane composition \n dropped and elongated “regular wide leg” jeans, wool composition",
+          "img": "The-collection-7.jpg",
+          "references": []
+        },
+        {
+          "name": "d. Silk and blue dust textile: washing processes in denim",
+          "description": "look 8 - \n denim dust t-shirt \n regular jacket \n regular wide leg jeans \n silk composition ",
+          "img": "The-collection-8.jpg",
+          "references": []
+        },
+        {
+          "name": "e. Denim dust on Silk Organza: objects and garments exists in flat, and they are intended to be suggestive",
+          "description": "look 9 - \n underlayer long t-shirt / skinny high rise jean, silk/elastane composition \n denim dust flat oversize jacket , silk composition",
+          "img": "The-collection-9.jpg",
+          "references": []
         }
       ]
     }
