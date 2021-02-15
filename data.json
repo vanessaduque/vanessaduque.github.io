@@ -180,23 +180,23 @@
     },
     {
       "id": 50,
-      "title": "Documenta",
+      "title": "Documentation",
       "url": "/",
       "img": "String",
       "description": "String",
       "categories": [
         {
-          "name": "Documenta",
+          "name": "Documentation",
           "description": "String",
           "img": "String"
         },
         {
-          "name": "Documenta",
+          "name": "Documentation",
           "description": "String",
           "img": "String"
         },
         {
-          "name": "Documenta",
+          "name": "Documentation",
           "description": "String",
           "img": "String"
         },
